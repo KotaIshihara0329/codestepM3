@@ -187,6 +187,7 @@ h1 {
     background-color: #555;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 .btn__add {
