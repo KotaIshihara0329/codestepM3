@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Codestepm3..." />
+    <meta property="og:description" content="Codestepm3..." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://" />
+    <meta property="og:url" content="http://codestep3.com" />
+    <title>codestepm3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header__container">
+        <div class="header__content">
+          <img src="images/logo.svg" alt="logo" />
+          <nav class="header__section">
+            <ul class="header__former">
+              <li class="former__start"><a href="#">all</a></li>
+              <li><a href="#">new</a></li>
+              <li><a href="#">vintage</a></li>
+              <li><a href="#">category</a></li>
+              <li><a href="#">lookbook</a></li>
+              <li class="former__last"><a href="#">blog</a></li>
+            </ul>
+            <ul class="header__latter">
+              <li class="latter_first"><a href="#">login</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container main__container">
+        <div class="main__content">
+          <picture>
+            <source
+              type="image/jpg"
+              srcset="images/photo@1x.jpg 1x, images/photo@2x.jpg 2x"
+            />
+            <img src="images/photo@1x.jpg" alt="mainphoto" />
+          </picture>
+          <div class="main__content--small">
+            <h1>TOTALLY Short Sleeve Shirt</h1>
+            <p>
+              This T-shirt is really authentic and the material is also great.
+              It must be a great item for you forever! I believe that! I think
+              the most important thing for you is to try to wear it and actually
+              try to wear it!! You can do it definitely!! This t-shirts is only
+              available for woman. Because of the size restiction.
+            </p>
+            <p id="price">￥9,999 +tax</p>
+            <table class="table__former">
+              <thead>
+                <tr>
+                  <th class="column--1">Color</th>
+                  <th class="column--2">Size</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="column--1">White</td>
+                  <td class="column--2">S</td>
+                  <td>
+                    <select name="size" id="size">
+                      <optgroup label="size">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </optgroup>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column--1">White</td>
+                  <td class="column--2">M</td>
+                  <td>
+                    <select name="size" id="size">
+                      <optgroup label="size">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </optgroup>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="column--1">White</td>
+                  <td class="column--2">L</td>
+                  <td class="column--3">
+                    <select name="size" id="size">
+                      <optgroup label="size">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </optgroup>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn btn__add">ADD TO CART</button>
+            <table class="table__latter">
+              <thead>
+                <tr>
+                  <th>Size</th>
+                  <th>Chest</th>
+                  <th>Weist</th>
+                  <th>Height</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table__latter--dark">S</td>
+                  <td>1-20</td>
+                  <td>1-30</td>
+                  <td>10-40</td>
+                </tr>
+                <tr>
+                  <td class="table__latter--dark">M</td>
+                  <td>20-40</td>
+                  <td>30-50</td>
+                  <td>40-60</td>
+                </tr>
+                <tr>
+                  <td class="table__latter--dark">L</td>
+                  <td>40-60</td>
+                  <td>50-70</td>
+                  <td>60-80</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer__container">
+        <p>&copy; totally</p>
+      </div>
+    </footer>
+  </body>
+</html>

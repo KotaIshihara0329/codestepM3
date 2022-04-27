@@ -1,0 +1,293 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Typography */
+h1 {
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+.header__container {
+   width: 100%;
+   margin:  0 auto;
+   text-align: center;
+   
+}
+
+.header__container {
+    padding: 3.6rem 1.8rem 2rem;
+}
+
+
+.header__container img {
+    width: 10.9rem;
+    vertical-align: bottom;
+    margin: 0 auto 2.6rem;
+}
+
+.header__content {
+    margin:  0 auto;
+}
+
+.header__section ul {
+    padding-left: 0;
+}
+
+.header__section {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+.header__former a, .header__latter a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.header__former {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    
+  
+   
+}
+
+.header__former, .header__latter {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header__latter {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__latter {
+    margin-left: 3rem;
+}
+
+
+.header__former li, .header__latter li {
+    margin-right: 1.4rem;
+
+    text-transform: uppercase;
+   
+}
+
+.header__former a:visited, .header__latter a:visited {
+    color: black;
+}
+
+@media screen and (min-width:766px) {
+    
+
+    .container {
+        width: 100%;
+    }
+    .header__content {
+
+        /* ここで、80%にすることによって、navのoverflowを防いでいる。これは本当に大事なこと。
+        なんでも、rem指定であればいよいということではない。%を使う方が良いこともある。
+         */
+
+
+
+        width: 80%;
+    }
+
+    .header__section {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 896px) {
+    .header__container {
+        border-bottom: 1px solid #c3c3c3;
+        
+    }
+}
+
+
+/* Main */
+
+
+
+.main__container {
+    margin-bottom: 11rem;
+}
+
+
+.main__content {
+    width: 100%;
+    margin: 0 auto;
+   
+
+}
+
+.main__content img {
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.main__container {
+    margin-bottom: 11rem;
+}
+
+.main__content--small {
+    padding: 0 5%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main__content--small h1 {
+    padding: 2rem 0;
+    border-top: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c3c3c3;
+    margin: 1rem auto 2rem;
+}
+
+
+#price {
+    margin: 5rem auto 3rem;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 1.8rem;
+    color: white;
+    background-color: #555;
+    outline: none;
+    border: none;
+}
+
+.btn__add {
+    margin: 3rem auto;
+}
+
+
+table, td {
+    border-collapse: collapse;
+}
+
+.table__former, .table__latter {
+    width: 100%;
+}
+
+select {
+    width: 80%;
+    outline: none;
+    border: 1px solid #cfcfcf;
+}
+
+ th, td {
+    border: 1px solid #cfcfcf;
+}
+
+
+th, td {
+    padding: 1rem 0;
+}
+td {
+    text-align: center;
+}
+
+.table__former th {
+    border-top: initial;
+}
+
+.table__latter th {
+    background-color: #ededed;
+}
+
+.table__latter--dark {
+    background-color: #ededed;
+
+}
+
+.column--1, .column--2, .column--3 {
+    border-bottom: none;
+}
+
+.column--1, .column--2 {
+    width: 20%;
+}
+
+.table__former th:last-child, .table__former td:last-child {
+    border-right: none;
+}
+
+.table__former th:first-child, .table__former td:first-child {
+    border-left: none;
+}
+
+
+
+
+
+
+@media screen and (min-width:896px) {
+    .main__container {
+        margin-top: 5rem;
+    }
+
+    .main__content {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .main__content--small h1 {
+        margin-top: 0;
+    }
+
+
+
+}
+
+
+/* Footer */ 
+.footer__container p {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-top: 0;
+
+}
+
+.footer__container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
